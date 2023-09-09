@@ -6,7 +6,7 @@ import com.michael.promptgenerator.Enum.Language;
 import lombok.Data;
 
 @Data
-public class CommonConfig {
+public class Config {
 
     private String delimiter = "'''";
 
@@ -15,5 +15,7 @@ public class CommonConfig {
 
     private Language language = Language.EN;
 
+    @JsonProperty("computer_language")
+    private String computerLanguage = "";
 
 }
